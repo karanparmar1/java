@@ -49,8 +49,8 @@
 						<i class="fa fa-angle-right"></i> &nbsp; Delete User
 					</a></li>
 			</ul></li>
-			
-			<li><a href="${path}/admin/category/">
+
+		<li><a href="${path}/admin/category/">
 				<i class="fa fa-indent"></i>
 				<span class="link-title">&nbsp; Categories</span>
 				<span class="fa arrow"></span>
@@ -63,6 +63,21 @@
 						<i class="fa fa-angle-right"></i> &nbsp; Add
 					</a></li>
 			</ul></li>
+
+		<li><a href="${path}/admin/product/">
+				<i class="fa fa-tags"></i>
+				<span class="link-title">&nbsp; Products</span>
+				<span class="fa arrow"></span>
+			</a>
+			<ul>
+				<li><a href="${path}/admin/product/">
+						<i class="fa fa-angle-right"></i> &nbsp; List
+					</a></li>
+				<li><a href="${path}/admin/product/add">
+						<i class="fa fa-angle-right"></i> &nbsp; Add
+					</a></li>
+			</ul></li>
+
 
 		<li><a href="${path}/admin/address/list">
 				<i class="fa fa-location-arrow"></i>

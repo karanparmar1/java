@@ -26,14 +26,14 @@ public class CategoryController {
 	@RequestMapping({ "", "/", "list", "/list" })
 	public String index(ModelMap mp) {
 		mp.put("categories", categoryService.findParentCategories());
-		return "admin.category.index";
+		return "admin.category.display-category-list";
 	}
 
 	@GetMapping({ "add" })
 	public String add(ModelMap mp) {
 		mp.put("category", new Category());
 		mp.put("reqType", "ADD");
-		return "admin.category.form";
+		return "admin.category.manage-category-form";
 	}
 
 	@PostMapping({ "add" })
@@ -55,7 +55,7 @@ public class CategoryController {
 	public String form(@PathVariable("id") int id, ModelMap mp) {
 		mp.put("category", categoryService.findById(id));
 		mp.put("reqType", "EDIT");
-		return "admin.category.form";
+		return "admin.category.manage-category-form";
 	}
 
 	@PostMapping("edit/{id}")
@@ -73,7 +73,7 @@ public class CategoryController {
 	@GetMapping("{id}/subcategories")
 	public String subcategories(@PathVariable("id") int id, ModelMap mp) {
 		mp.put("category", categoryService.findById(id));
-		return "admin.category.subcategories";
+		return "admin.category.display-subcategory-list";
 	}
 
 	@GetMapping("{id}/addsubcategory")
@@ -82,14 +82,14 @@ public class CategoryController {
 		category.setCategory(categoryService.findById(id));
 		mp.put("category", category);
 		mp.put("reqType", "ADD");
-		return "admin.subcategory.form";
+		return "admin.category.manage-subcategory-form";
 	}
 
 	@GetMapping("{id}/subcategory/{subid}/edit")
 	public String editform(@PathVariable("id") int id, @PathVariable("subid") int subid, ModelMap mp) {
 		mp.put("category", categoryService.findById(subid));
 		mp.put("reqType", "EDIT");
-		return "admin.subcategory.form";
+		return "admin.category.manage-subcategory-form";
 	}
 
 	@PostMapping("subcategory/{id}/edit")

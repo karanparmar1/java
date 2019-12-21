@@ -5,7 +5,7 @@ import org.springframework.stereotype.Repository;
 
 import com.kar.techparts.models.Product;
 
-@Repository("poductRepo")
+@Repository("productRepo")
 public interface ProductRepo extends CrudRepository<Product,Integer>{
 
 	

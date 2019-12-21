@@ -10,16 +10,11 @@
 <head>
 <meta charset="UTF-8">
 <title>TechParts | <tiles:getAsString name="title" ignore="true"/></title>
-<meta name="author" content="Rokaux">
+<meta name="author" content="Karan">
 <!-- Mobile Specific Meta Tag-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<!-- Favicon and Apple Icons-->
-<link rel="icon" type="image/x-icon" href="favicon.ico">
-<link rel="icon" type="image/png" href="favicon.png">
-<link rel="apple-touch-icon" href="touch-icon-iphone.png">
-<link rel="apple-touch-icon" sizes="152x152" href="touch-icon-ipad.png">
-<link rel="apple-touch-icon" sizes="180x180" href="touch-icon-iphone-retina.png">
-<link rel="apple-touch-icon" sizes="167x167" href="touch-icon-ipad-retina.png">
+
+<link rel="shortcut icon" href="${path}/resources/common/img/logob.png" />
 <!-- Vendor Styles including: Bootstrap, Font Icons, Plugins, etc.-->
 <link rel="stylesheet" media="screen" href="${path}/resources/user/css/vendor.min.css">
 <!-- Main Template Styles-->
@@ -38,12 +33,11 @@
 	<!-- Page Content-->
 
 	<!-- Main Slider-->
-	<tiles:insertAttribute name="pageSlider"></tiles:insertAttribute>
+	<tiles:insertAttribute name="pageSlider" ignore="true" defaultValue=""> </tiles:insertAttribute>
 
 	<!-- CurrentPage Content-->
-	<tiles:insertAttribute name="pageContent"></tiles:insertAttribute>
+	<tiles:insertAttribute name="content"></tiles:insertAttribute>
 	
-
 	<!-- Site Footer-->
 	<tiles:insertAttribute name="footer"></tiles:insertAttribute>
 	

@@ -17,6 +17,9 @@ import javax.persistence.Table;
 @Table(name = "photo")
 public class Photo implements Serializable {
 
+	
+	private static final long serialVersionUID = 1L;
+
 	/** Primary key. */
 	protected static final String PK = "id";
 

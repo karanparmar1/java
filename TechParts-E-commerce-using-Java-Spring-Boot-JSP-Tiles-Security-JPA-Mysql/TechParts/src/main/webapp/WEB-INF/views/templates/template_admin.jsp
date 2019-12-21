@@ -5,7 +5,7 @@
 <html class="no-js">
 <head>
 <meta charset="UTF-8">
-<title>Dashboard | TechParts</title>
+<title>Dashboard |  <tiles:getAsString name="title" ignore="true"/></title>
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <link rel="shortcut icon" href="${path}/resources/admin/img/logob.png" />
@@ -45,6 +45,7 @@
 </head>
 
 <body class="body">
+
 	<div class="preloader"
 		style="position: fixed; width: 100%; height: 100%; top: 0; left: 0; z-index: 100000; backface-visibility: hidden; background: #ffffff;">
 		<div class="preloader_img"
@@ -52,6 +53,8 @@
 			<img src="${path}/resources/admin/img/loader.gif" style="width: 40px;" alt="loading...">
 		</div>
 	</div>
+
+
 	<div class="bg-dark" id="wrap">
 		<div id="top">
 			<!-- .navbar -->
@@ -67,7 +70,7 @@
 
 			<!-- #Content Starts here -->
 			<div class="dataContent">
-				<tiles:insertAttribute name="adminContent"></tiles:insertAttribute>
+				<tiles:insertAttribute name="content"></tiles:insertAttribute>
 			</div>
 			<!-- /#Content -->
 		</div>
@@ -133,7 +136,6 @@
 
 
 	<script>
-
 		htt = $("html").height("100%");
 		function resize() {
 			if ($(window).width() > 514) {
@@ -148,50 +150,61 @@
 			$(window).resize(resize);
 			resize();
 		});
-		
+
 		function addForm(type) {
-			$.ajax({
-				type : "GET",
-				url : "${path}/admin/" + type + "/"+type+"-form",
-				success : function(data) {
-					$(".dataContent").html('<div class="wow filpInx animated" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s;  animation-name: flipInX;">'+data+'</div>');
-
-				}
-			});
-		}
-		
-		function editForm(type,id)
-		{
-		 $.ajax({
-				type : "GET",
-				url : "${path}/admin/" + type + "/edit/"+id,
-				success : function(data) {
-					$(".dataContent").html('<div class="wow filpInx animated" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s;  animation-name: flipInY;">'+data+'</div>')
-				}
-			});  
-		}
-
-		function fetchList(type) {
-			$.ajax({
+			$
+					.ajax({
 						type : "GET",
-						url : "${path}/admin/" + type + "/list",
+						url : "${path}/admin/" + type + "/" + type + "-form",
 						success : function(data) {
-							$(".myTableData").html('<div class="wow filpInx animated" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s;  animation-name: flipInY;">'+data+'</div>');
+							$(".dataContent")
+									.html(
+											'<div class="wow filpInx animated" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s;  animation-name: flipInX;">'
+													+ data + '</div>');
 
 						}
 					});
 		}
 
-	
+		function editForm(type, id) {
+			$
+					.ajax({
+						type : "GET",
+						url : "${path}/admin/" + type + "/edit/" + id,
+						success : function(data) {
+							$(".dataContent")
+									.html(
+											'<div class="wow filpInx animated" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s;  animation-name: flipInY;">'
+													+ data + '</div>')
+						}
+					});
+		}
+
+		function fetchList(type) {
+			$
+					.ajax({
+						type : "GET",
+						url : "${path}/admin/" + type + "/list",
+						success : function(data) {
+							$(".myTableData")
+									.html(
+											'<div class="wow filpInx animated" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s;  animation-name: flipInY;">'
+													+ data + '</div>');
+
+						}
+					});
+		}
+
 		function deleteRow(type, id) {
 			var rowid = "#row" + id;
 			var popid = "pop" + id
 			console.log(rowid + " Datatype is :" + type);
 			oldData = $(rowid).html();
 
-			
-			$('<td></td><td></td><td><button type="button" id="yesDelete" class="btn btn-labeled btn-success"><span class="btn-label"> <i class="fa fa-check"> </i> </span> YES DELETE</button>  <button type="button" id="noDelete" class="btn btn-labeled btn-danger"  ><span class="btn-label"><i class="fa fa-close"></i></span> Cancel</button></td>').css({
-				 		position: "absolute",
+			$(
+					'<td></td><td></td><td><button type="button" id="yesDelete" class="btn btn-labeled btn-success"><span class="btn-label"> <i class="fa fa-check"> </i> </span> YES DELETE</button>  <button type="button" id="noDelete" class="btn btn-labeled btn-danger"  ><span class="btn-label"><i class="fa fa-close"></i></span> Cancel</button></td>')
+					.css({
+						position : "absolute",
 						width : "100%",
 						height : this.height,
 						zIndex : "99",
@@ -232,10 +245,11 @@
 						});
 
 					});
-			
-			$("#noDelete").click(function() { $(rowid).html(oldData);});
+
+			$("#noDelete").click(function() {
+				$(rowid).html(oldData);
+			});
 		}
-		
 	</script>
 </body>
 </html>

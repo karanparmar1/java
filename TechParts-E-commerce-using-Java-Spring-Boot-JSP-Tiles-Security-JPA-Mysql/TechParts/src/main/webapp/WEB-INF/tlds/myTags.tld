@@ -17,7 +17,14 @@
 			<name>fontAttributes</name>
 		</attribute>
 	</tag>
-	
+
+	<tag>
+		<name>CategoryDropdown</name>
+		<tag-class>com.kar.techparts.tags.CategoryDropdown</tag-class>
+		<body-content>empty</body-content>
+		
+	</tag>
+
 	<tag>
 		<name>parentCategoriesOnly</name>
 		<tag-class>com.kar.techparts.tags.OnlyParentCategoryList</tag-class>
@@ -29,6 +36,6 @@
 			<name>displayType</name>
 		</attribute>
 	</tag>
-	
+
 
 </taglib>

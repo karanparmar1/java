@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+
+<tiles-definitions>
+
+	<definition name="admin.product.display-product-list" extends="template_admin">
+		<put-attribute name="title" value="products list" />
+		<put-attribute name="content"
+			value="/WEB-INF/views/admin/product/display-product-list.jsp" />
+	</definition>
+
+	<definition name="admin.product.add" extends="template_admin">
+		<put-attribute name="title" value="Add Product" />
+		<put-attribute name="content"
+			value="/WEB-INF/views/admin/product/manage-product-form.jsp" />
+	</definition>
+
+	<definition name="admin.product.edit" extends="template_admin">
+		<put-attribute name="title" value="Manage Product" />
+		<put-attribute name="content"
+			value="/WEB-INF/views/admin/product/manage-product-form.jsp" />
+	</definition>
+
+</tiles-definitions>

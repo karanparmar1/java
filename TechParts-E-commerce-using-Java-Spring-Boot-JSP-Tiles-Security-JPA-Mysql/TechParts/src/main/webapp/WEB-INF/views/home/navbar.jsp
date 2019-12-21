@@ -1,6 +1,3 @@
-<%@page import="java.util.ArrayList"%>
-<%@page import="com.kar.techparts.models.Category"%>
-<%@page import="java.util.List"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@taglib prefix="mt" uri="http://techparts.com"%>
 <c:set var="path" value="${pageContext.request.contextPath}"></c:set>
@@ -32,6 +29,26 @@
 									</a>
 								</div> --%>
 								<mt:parentCategoriesOnly displayType="inNavbar" />
+
+								<%-- <c:forEach var="cat" items="${categories}">
+									<c:if test=" ${cat.name ne 'other'}">
+										<div class="col-sm-4">
+											<a class="d-block navi-link text-center mb-30" href="${path}/shop">
+												<span class="text-gray-dark"> ${cat.name} </span>
+											</a>
+										</div>
+									</c:if>
+								</c:forEach> --%>
+
+								<c:forEach var="cat" items="${categories}">
+									<c:if test=" ${cat.name eq 'other'}">
+										<div class="col-sm-4">
+											<a class="d-block navi-link text-center mb-30" href="${path}/shop">
+												<span class="text-gray-dark"> ${cat.name} </span>
+											</a>
+										</div>
+									</c:if>
+								</c:forEach>
 							</div>
 
 						</div>
@@ -134,7 +151,7 @@
 					<!-- Entry-->
 					<div class="entry">
 						<div class="entry-thumb">
-							<a href="shop-single.html">
+							<a  href="${path}/shop/product">
 								<img src="${path}/resources/user/img/shop/widget/05.jpg" alt="Product">
 							</a>
 						</div>
@@ -246,7 +263,7 @@
 					</c:when>
 					<c:otherwise>
 						<div class="toolbar-item">
-							<a href="${path}/resources/user/login">
+							<a href="${path}/account/login">
 								<div>
 									<i class="icon-user"></i>
 									<span class="text-label">Sign In / Up</span>
@@ -327,7 +344,7 @@
 							<span class="sub-menu-toggle"></span>
 						</span>
 						<ul class="slideable-submenu">
-							<mt:parentCategoriesOnly displayType="inOnlyLiTag"/>
+							<mt:parentCategoriesOnly displayType="inOnlyLiTag" />
 						</ul></li>
 
 
@@ -391,8 +408,8 @@
 			</button>
 			<div class="dropdown-menu mega-dropdown">
 				<div class="row">
-					<mt:parentCategoriesOnly displayType="inNavbar"/> 
-					</div>
+					<mt:parentCategoriesOnly displayType="inNavbar" />
+				</div>
 			</div>
 		</div>
 		<!-- Main Navigation-->

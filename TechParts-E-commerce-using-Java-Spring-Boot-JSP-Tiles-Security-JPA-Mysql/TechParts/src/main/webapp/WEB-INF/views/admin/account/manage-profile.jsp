@@ -26,11 +26,12 @@
 		<div class="inner bg-container">
 			<div class="card">
 
-				<div class="card-block m-t-15">
+				<div class="card-block m-t-15">s
 					<div>
 						<h4>Personal Information</h4>
 					</div>
-					<s:form cssClass="form-horizontal login_validator" id="tryitForm" action="${path}/admin/account/profile" modelAttribute="account">
+					<s:form cssClass="form-horizontal login_validator" id="tryitForm" action="${path}/admin/account/profile"
+						modelAttribute="account">
 						<div class="row">
 							<div class="col-xs-12">
 								<div class="form-group row m-t-25">
@@ -189,7 +190,7 @@
 									<div class="col-xl-6 col-lg-8 add_user_checkbox_error push-lg-3">
 										<div>
 											<label class="custom-control custom-checkbox">
-												<s:checkbox id="checkbox1" path="status" cssClass="custom-control-input"/>
+												<s:checkbox id="checkbox1" path="status" cssClass="custom-control-input" />
 												<span class="custom-control-indicator"></span>
 												<span class="custom-control-description">Activate your account</span>
 											</label>
@@ -218,5 +219,3 @@
 	<!-- /.outer -->
 	<!-- # right side -->
 </div>
-
-

@@ -6,27 +6,27 @@
 
 <tiles-definitions>
 
-	<definition name="admin.category.index" extends="template_admin">
-		<put-attribute name="content" value="/WEB-INF/views/admin/category/index.jsp" />
-		<put-attribute name="adminContent"
-			value="/WEB-INF/views/templates/admin/category-display.jsp"></put-attribute>
+	<definition name="admin.category.display-category-list" extends="template_admin">
+		<put-attribute name="title" value="Categories List" />
+		<put-attribute name="content"
+			value="/WEB-INF/views/admin/category/display-category-list.jsp" />
 	</definition>
 
-	<definition name="admin.category.form" extends="template_admin">
-		<put-attribute name="content" value="/WEB-INF/views/admin/category/add-category.jsp" />
-		<put-attribute name="adminContent"
-			value="/WEB-INF/views/templates/admin/category-form.jsp"></put-attribute>
+	<definition name="admin.category.manage-category-form" extends="template_admin">
+		<put-attribute name="title" value="Manage Category" />
+		<put-attribute name="content"
+			value="/WEB-INF/views/admin/category/manage-category-form.jsp" />
 	</definition>
 
-	<definition name="admin.category.subcategories" extends="template_admin">
-		<put-attribute name="content" value="/WEB-INF/views/admin/category/index.jsp" />
-		<put-attribute name="adminContent"
-			value="/WEB-INF/views/templates/admin/subcategory-display.jsp"></put-attribute>
+	<definition name="admin.category.display-subcategory-list" extends="template_admin">
+		<put-attribute name="title" value="Subcategories List" />
+		<put-attribute name="content"
+			value="/WEB-INF/views/admin/category/display-subcategory-list.jsp" />
 	</definition>
-	<definition name="admin.subcategory.form" extends="template_admin">
-		<put-attribute name="content" value="/WEB-INF/views/admin/category/add-category.jsp" />
-		<put-attribute name="adminContent"
-			value="/WEB-INF/views/templates/admin/subcategory-form.jsp"></put-attribute>
+	<definition name="admin.category.manage-subcategory-form" extends="template_admin">
+	<put-attribute name="title" value="Manage SubCategory" />
+		<put-attribute name="content"
+			value="/WEB-INF/views/admin/category/manage-subcategory-form.jsp" />
 	</definition>
 
 

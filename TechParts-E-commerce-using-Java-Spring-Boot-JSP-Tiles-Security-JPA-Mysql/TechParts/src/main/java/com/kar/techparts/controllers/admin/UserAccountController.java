@@ -30,7 +30,7 @@ public class UserAccountController {
 	public String profile(Authentication auth, ModelMap mp) {
 		mp.put("roles", roleRepo.findAll());
 		mp.put("account", accountService.findByUsername(auth.getName()));
-		return "admin.account.profile";
+		return "admin.account.manage-profile";
 	}
 
 	@PostMapping("profile")
@@ -49,7 +49,7 @@ public class UserAccountController {
 		currentAccount.setAddress(account.getAddress());
 		
 		accountService.save(currentAccount);
-		return "redirect:/admin/account/profile";
+		return "redirect:/admin/account/manage-profile";
 	}
 
 }

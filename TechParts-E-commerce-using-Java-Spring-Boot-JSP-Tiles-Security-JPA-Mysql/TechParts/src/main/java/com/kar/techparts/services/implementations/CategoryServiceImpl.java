@@ -14,17 +14,16 @@ import com.kar.techparts.services.CategoryService;
 @Service("categoryService")
 public class CategoryServiceImpl implements CategoryService {
 
-
 	@Autowired
 	private CategoryRepo categoryRepo;
-	
-	public static String message=null;
+
+	public static String message = null;
 
 	@Override
 	public Category findById(int id) {
 		return categoryRepo.findById(id).get();
 	}
-	
+
 	@Override
 	public Iterable<Category> findAll() {
 
@@ -33,7 +32,7 @@ public class CategoryServiceImpl implements CategoryService {
 
 	@Override
 	public List<Category> findParentCategories() {
-		
+
 		return categoryRepo.findParentCategories();
 	}
 
@@ -45,21 +44,18 @@ public class CategoryServiceImpl implements CategoryService {
 
 	@Override
 	public String delete(int id) {
-		message=" Category : "+categoryRepo.findById(id).get().getName()+" with id : " + id +" was Deleted.";
+		message = " Category : " + categoryRepo.findById(id).get().getName() + " with id : " + id + " was Deleted.";
 		try {
 			categoryRepo.deleteById(id);
+		} catch (Exception e) {
+			message = "ERROR : Failed to Delete Category : " + categoryRepo.findById(id).get().getName() + " with id : "
+					+ id;
 		}
-		catch (Exception e) {
-			message="ERROR : Failed to Delete Category : "+categoryRepo.findById(id).get().getName()+" with id : " + id;
-		}
-		
-		
 		return message;
 	}
 
 	@Override
 	public List<Category> findParentCategoriesWithStatus(boolean status) {
-		// TODO Auto-generated method stub
 		return categoryRepo.findParentCategoriesWithStatus(status);
 	}
 

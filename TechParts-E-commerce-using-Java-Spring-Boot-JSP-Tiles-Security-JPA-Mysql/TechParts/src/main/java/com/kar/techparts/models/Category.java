@@ -34,12 +34,12 @@ public class Category implements Serializable {
 	@Column(nullable = false, length = 50)
 	private String name;
 	@Column(nullable = false, length = 1)
-	private boolean status;
+	private boolean status=true;
 
 	@OneToMany(fetch = FetchType.LAZY, mappedBy = "category")
 	private List<Category> categories = new ArrayList<Category>(0);
 
-	@ManyToOne
+	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name = "parent_id")
 	private Category category;
 

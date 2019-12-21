@@ -16,15 +16,15 @@ FEATURES :
   - [x] User Management  
   - [x] Category Management 
   - [x] Product Management 
-  - [] Order Management
-  - [] Feedback Management
+  - [ ] Order Management
+  - [ ] Feedback Management
 
 - Customer Functionalities : 
   - [x] Login,Logout 
-  - [] Profile Management 
-  - [] View Products (Search/Find ,Sort/Filter)
-  - [] Cart Management
-  - [] Order Management
+  - [ ] Profile Management 
+  - [ ] View Products (Search/Find ,Sort/Filter)
+  - [ ] Cart Management
+  - [ ] Order Management
 
 - By Default Guest users can signup and View products only.
 __________________________________________________________

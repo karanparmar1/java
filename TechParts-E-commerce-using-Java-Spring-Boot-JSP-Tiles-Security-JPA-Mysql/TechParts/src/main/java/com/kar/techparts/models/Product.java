@@ -18,6 +18,7 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "product")
 public class Product implements Serializable {
+	private static final long serialVersionUID = 1L;
 
 	/** Primary key. */
 	protected static final String PK = "id";
@@ -36,7 +37,7 @@ public class Product implements Serializable {
 	@Column(nullable = false)
 	private String details;
 	@Column(nullable = false, length = 1)
-	private boolean status;
+	private boolean status=true;
 	@Column(nullable = false, length = 1)
 	private boolean featured;
 	@OneToMany(mappedBy = "product")
@@ -54,8 +55,7 @@ public class Product implements Serializable {
 	}
 
 	/**
-	 * Access method for id.
-	 *
+	 * Access method for id. 
 	 * @return the current value of id
 	 */
 	public int getId() {
@@ -63,8 +63,7 @@ public class Product implements Serializable {
 	}
 
 	/**
-	 * Setter method for id.
-	 *
+	 * Setter method for id. 
 	 * @param aId the new value for id
 	 */
 	public void setId(int aId) {
@@ -72,8 +71,7 @@ public class Product implements Serializable {
 	}
 
 	/**
-	 * Access method for name.
-	 *
+	 * Access method for name. 
 	 * @return the current value of name
 	 */
 	public String getName() {
@@ -81,8 +79,7 @@ public class Product implements Serializable {
 	}
 
 	/**
-	 * Setter method for name.
-	 *
+	 * Setter method for name. 
 	 * @param aName the new value for name
 	 */
 	public void setName(String aName) {
@@ -90,8 +87,7 @@ public class Product implements Serializable {
 	}
 
 	/**
-	 * Access method for price.
-	 *
+	 * Access method for price. 
 	 * @return the current value of price
 	 */
 	public double getPrice() {
@@ -99,8 +95,7 @@ public class Product implements Serializable {
 	}
 
 	/**
-	 * Setter method for price.
-	 *
+	 * Setter method for price. 
 	 * @param aPrice the new value for price
 	 */
 	public void setPrice(double aPrice) {
@@ -108,8 +103,7 @@ public class Product implements Serializable {
 	}
 
 	/**
-	 * Access method for quantity.
-	 *
+	 * Access method for quantity. 
 	 * @return the current value of quantity
 	 */
 	public int getQuantity() {
@@ -117,8 +111,7 @@ public class Product implements Serializable {
 	}
 
 	/**
-	 * Setter method for quantity.
-	 *
+	 * Setter method for quantity. 
 	 * @param aQuantity the new value for quantity
 	 */
 	public void setQuantity(int aQuantity) {
@@ -126,8 +119,7 @@ public class Product implements Serializable {
 	}
 
 	/**
-	 * Access method for description.
-	 *
+	 * Access method for description. 
 	 * @return the current value of description
 	 */
 	public String getDescription() {
@@ -135,8 +127,7 @@ public class Product implements Serializable {
 	}
 
 	/**
-	 * Setter method for description.
-	 *
+	 * Setter method for description. 
 	 * @param aDescription the new value for description
 	 */
 	public void setDescription(String aDescription) {
@@ -144,8 +135,7 @@ public class Product implements Serializable {
 	}
 
 	/**
-	 * Access method for details.
-	 *
+	 * Access method for details. 
 	 * @return the current value of details
 	 */
 	public String getDetails() {
@@ -171,8 +161,7 @@ public class Product implements Serializable {
 	}
 
 	/**
-	 * Setter method for status.
-	 *
+	 * Setter method for status. 
 	 * @param aStatus the new value for status
 	 */
 	public void setStatus(boolean aStatus) {
@@ -180,8 +169,7 @@ public class Product implements Serializable {
 	}
 
 	/**
-	 * Access method for featured.
-	 *
+	 * Access method for featured. 
 	 * @return true if and only if featured is currently true
 	 */
 	public boolean isFeatured() {
@@ -189,8 +177,7 @@ public class Product implements Serializable {
 	}
 
 	/**
-	 * Setter method for featured.
-	 *
+	 * Setter method for featured. 
 	 * @param aFeatured the new value for featured
 	 */
 	public void setFeatured(boolean aFeatured) {
@@ -199,7 +186,6 @@ public class Product implements Serializable {
 
 	/**
 	 * Access method for photo.
-	 *
 	 * @return the current value of photo
 	 */
 	public Set<Photo> getPhoto() {
@@ -207,8 +193,7 @@ public class Product implements Serializable {
 	}
 
 	/**
-	 * Setter method for photo.
-	 *
+	 * Setter method for photo. 
 	 * @param aPhoto the new value for photo
 	 */
 	public void setPhoto(Set<Photo> aPhoto) {
@@ -216,8 +201,7 @@ public class Product implements Serializable {
 	}
 
 	/**
-	 * Access method for category.
-	 *
+	 * Access method for category. 
 	 * @return the current value of category
 	 */
 	public Category getCategory() {
@@ -225,8 +209,7 @@ public class Product implements Serializable {
 	}
 
 	/**
-	 * Setter method for category.
-	 *
+	 * Setter method for category. 
 	 * @param aCategory the new value for category
 	 */
 	public void setCategory(Category aCategory) {
@@ -234,8 +217,7 @@ public class Product implements Serializable {
 	}
 
 	/**
-	 * Access method for company.
-	 *
+	 * Access method for company. 
 	 * @return the current value of company
 	 */
 	public Company getCompany() {
@@ -243,8 +225,7 @@ public class Product implements Serializable {
 	}
 
 	/**
-	 * Setter method for company.
-	 *
+	 * Setter method for company. 
 	 * @param aCompany the new value for company
 	 */
 	public void setCompany(Company aCompany) {
@@ -252,8 +233,7 @@ public class Product implements Serializable {
 	}
 
 	/**
-	 * Compares the key for this instance with another Product.
-	 *
+	 * Compares the key for this instance with another Product. 
 	 * @param other The object to compare to
 	 * @return True if other object is instance of class Product and the key objects
 	 *         are equal
@@ -273,8 +253,7 @@ public class Product implements Serializable {
 	}
 
 	/**
-	 * Compares this instance with another Product.
-	 *
+	 * Compares this instance with another Product. 
 	 * @param other The object to compare to
 	 * @return True if the objects are the same
 	 */
@@ -286,8 +265,7 @@ public class Product implements Serializable {
 	}
 
 	/**
-	 * Returns a hash code for this instance.
-	 *
+	 * Returns a hash code for this instance. 
 	 * @return Hash code
 	 */
 	@Override
@@ -300,8 +278,7 @@ public class Product implements Serializable {
 	}
 
 	/**
-	 * Returns a debug-friendly String representation of this instance.
-	 *
+	 * Returns a debug-friendly String representation of this instance. 
 	 * @return String representation of this instance
 	 */
 	@Override
@@ -313,8 +290,7 @@ public class Product implements Serializable {
 	}
 
 	/**
-	 * Return all elements of the primary key.
-	 *
+	 * Return all elements of the primary key. 
 	 * @return Map of key names to values
 	 */
 	public Map<String, Object> getPrimaryKey() {

@@ -27,7 +27,7 @@ public class Company implements Serializable {
     @Column(nullable=false, length=30)
     private String name;
     @Column(nullable=false, length=1)
-    private boolean status;
+    private boolean status=true;
     @OneToMany(fetch = FetchType.LAZY,mappedBy="company")
     private Set<Product> product;
 
@@ -36,7 +36,10 @@ public class Company implements Serializable {
         super();
     }
 
-    /**
+    public Company(int id) {
+		this.id = id;
+	}
+	/**
      * Access method for id.
      *
      * @return the current value of id

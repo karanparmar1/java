@@ -13,18 +13,18 @@ __________________________________________________________
 FEATURES : 
 
 - Admin Functionalities :
-  - User Management (working)
-  - Category Management (working)
-  - Product Management (partially working)
-  - Order Management
-  - Feedback Management
+  - [x] User Management  
+  - [x] Category Management 
+  - [x] Product Management 
+  - [] Order Management
+  - [] Feedback Management
 
 - Customer Functionalities : 
-  - Login,Logout (working)
-  - Profile Management 
-  - View Products (Search/Find ,Sort/Filter)
-  - Cart Management
-  - Order Management
+  - [x] Login,Logout 
+  - [] Profile Management 
+  - [] View Products (Search/Find ,Sort/Filter)
+  - [] Cart Management
+  - [] Order Management
 
 - By Default Guest users can signup and View products only.
 __________________________________________________________

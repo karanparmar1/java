@@ -1,6 +1,7 @@
 **TechParts : E-commerce Project**
 
-Sell-Buy Tech Parts online 
+Tech Parts an Online Selling/Buying platform for tech products,  
+is developed with JAVA spring (Spring Boot) REST API and JSP as FrontEnd with MySQL Database.
 
 __________________________________________________________
 

@@ -32,6 +32,7 @@ TECHNOLOGIES USED :
 
 - FRONT END :  JSP,JSP Tiles, HTML, CSS, JavaScript, jQuery
 - BACKEND : JAVA with Spring MVC, Spring Boot, Spring Security, Spring Mail, Spring data JPA, Hibernate, JSTL ,Custom Taglib.
+- SERVER : Apache Tomcat
 - DATABASE : MySQL
 - IDE : Spring Tool Suit (STS).
 

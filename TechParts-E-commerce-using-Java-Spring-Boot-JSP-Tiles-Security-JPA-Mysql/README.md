@@ -1,4 +1,4 @@
-TechParts : E-commerce Project
+**TechParts : E-commerce Project**
 
 Sell-Buy Tech Parts online 
 
@@ -11,21 +11,21 @@ __________________________________________________________
 
 FEATURES : 
 
-Admin Functionalities :
+- Admin Functionalities :
   - User Management (working)
   - Category Management (working)
   - Product Management (partially working)
   - Order Management
   - Feedback Management
 
-Customer Functionalities : 
+- Customer Functionalities : 
   - Login,Logout (working)
   - Profile Management 
   - View Products (Search/Find ,Sort/Filter)
   - Cart Management
   - Order Management
 
-By Default Guest users can signup and View products only.
+- By Default Guest users can signup and View products only.
 __________________________________________________________
 
 TECHNOLOGIES USED :

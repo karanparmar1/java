@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+
+<tiles-definitions>
+
+	<definition name="admin.category.index" extends="template_admin">
+		<put-attribute name="content" value="/WEB-INF/views/admin/category/index.jsp" />
+		<put-attribute name="adminContent"
+			value="/WEB-INF/views/templates/admin/category-display.jsp"></put-attribute>
+	</definition>
+
+	<definition name="admin.category.form" extends="template_admin">
+		<put-attribute name="content" value="/WEB-INF/views/admin/category/add-category.jsp" />
+		<put-attribute name="adminContent"
+			value="/WEB-INF/views/templates/admin/category-form.jsp"></put-attribute>
+	</definition>
+
+	<definition name="admin.category.subcategories" extends="template_admin">
+		<put-attribute name="content" value="/WEB-INF/views/admin/category/index.jsp" />
+		<put-attribute name="adminContent"
+			value="/WEB-INF/views/templates/admin/subcategory-display.jsp"></put-attribute>
+	</definition>
+	<definition name="admin.subcategory.form" extends="template_admin">
+		<put-attribute name="content" value="/WEB-INF/views/admin/category/add-category.jsp" />
+		<put-attribute name="adminContent"
+			value="/WEB-INF/views/templates/admin/subcategory-form.jsp"></put-attribute>
+	</definition>
+
+
+</tiles-definitions>

@@ -1,0 +1,173 @@
+/*Lite &amp; Dark Colors of Color Pallet*/
+        .border_box {
+            border: 1px solid #eee;
+            padding-bottom:7%;
+            border-radius: 0;
+            overflow: hidden;
+            background: #fff;
+            width: 99%;
+            height: 100%;
+            text-align: center;
+        }
+     .progress_bars_margin_top .progress{
+         margin-top: 20px;
+         height: 10px;
+     }
+     .margin_for_lite_text{
+         margin-top: 10px !important;
+     }
+.cards_section_margin .nav-link.active{
+    background-color: #00c0ef !important;
+    color: #fff !important;
+}
+        /* paginaton */
+        .pagination>.active>a, .pagination>.active>span, .pagination>.active>a:hover, .pagination>.active>span:hover, .pagination>.active>a:focus, .pagination>.active>span:focus {
+            z-index: 2;
+            color: #fff;
+            cursor: default;
+            background-color: #00c0ef;
+            border-color: #00acd6;
+        }
+        .pagination>li>a, .pagination>li>span {
+            position: relative;
+            float: left;
+            padding: 6px 12px;
+            margin-left: -1px;
+            line-height: 1.42857143;
+            color: #00acd6;
+            text-decoration: none;
+            background-color: #fff;
+            border: 1px solid #ddd;
+        }
+
+        /* Pagination */
+
+        /* Pills */
+        .nav_profile_color>li.active>a, .nav_profile_color>li.active>a:hover, .nav_profile_color>li.active>a:focus {
+            color: #fff;
+        }
+        .nav_profile_color>li> a {
+            color:#00c0ef;
+        }
+        /*a.list-group-item.active>.badge, .nav_profile_color>.active>a>.badge {*/
+            /*color: #748df0;*/
+            /*background-color: #fff;*/
+        /*}*/
+        /*general */
+
+        .white_txt {color: #fff;}
+
+        .t_align {text-align: center;}
+        .no-border{border:0 !important;}
+
+
+        .padding10 {
+            padding: 10px 0;
+            color: #fff;
+        }
+     .nav_profile_color .nav-link.active{
+         color:#fff !important;
+         background: #00c0ef !important;
+
+     }
+     .danger_bg_dark{
+         background: #FF4D4D ;
+     }
+     .success_bg_dark {
+         background: #008C62;
+     }
+
+     .danger_bg_dark {
+         background: #d63030;
+     }
+
+     .info_bg_dark {
+         background: #3366FF;
+     }
+
+     .warning_bg_dark {
+         background: #CC8000;
+     }
+     .bg-default
+     {
+         background-color: #4F4D4D;
+     }
+
+     .default_bg_dark {
+         background: #282828;
+     }
+
+     .mint_bg_dark {
+         background:#0B8591;
+     }
+
+     .gray_bg_dark {
+         background: #798D8F;
+     }
+     .primary_bg_dark{
+         background:#0097BC;
+     }
+     .btn-link:hover{
+         color:#fff;
+     }
+     /*card section*/
+.card .card>.card-block
+{
+    padding: 1.25rem;
+}
+.cards_section_margin .card{
+    margin-bottom: 0;
+     }
+.nav_pills_margin_top{
+    margin-top: 10px;
+}
+
+/*lists*/
+.lists_margin_bottom{
+    margin-bottom: 13px;
+}
+.nav-tabs .nav-link.active{
+    background-color: #fff;
+    color:#525252;
+}
+.nav-tabs .nav-link.active:hover{
+    background-color: #fff;
+}
+
+#top .nav>.nav_profile_color>a:hover,
+#top .nav>.nav_profile_color>a:focus{
+    background-color: white;
+}
+#top .nav>.nav_home_color>a:focus,
+#top .nav>.nav_hover_color_home>a:hover{
+    background-color: #00c0ef;
+}
+#top .nav>.nav_home_color>a:hover{
+    background-color: #00c0ef;
+}
+#top .nav>li.nav_active_background_color>a:hover,
+#top .nav>li.nav_active_background_color {
+    background-color:#00c0ef;
+
+}
+
+.nav_profile_color>li>a{
+    color:#00c0ef;
+}
+.nav_profile_color>li.active>a{
+    background-color: #00c0ef;
+}
+.nav_bar_align_top{
+    margin-top: 10px;
+}
+.nav_profile_color>li.active>a,
+.nav_profile_color>li.active>a:focus{
+    background-color: #00c0ef;
+}
+.nav-inline>li> a ,.nav_inline_profile>li> a
+{
+    color: #00c0ef;}
+.list-group-flush .list-group-item{
+    border-left:0;
+    border-right: 0;
+}

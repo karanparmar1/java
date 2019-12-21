@@ -1,0 +1,54 @@
+.intl-tel-input .country-list{
+    z-index: 999;
+}
+.form_inline_btn_margin-top{
+    margin-top: 0 !important;
+}
+.custom-control .custom-control-indicator{
+    margin-top: 2px !important;
+}
+.horizontal_sign_section_top{
+    margin-top:5px
+}
+.horizontal_query_section_top{
+    margin-top: 10px;
+}
+.has-error .country-name{
+    color:#525252;
+}
+.intl-tel-input.allow-dropdown{
+    width: 100%;
+}
+.swal2-confirm{
+    background-color: #00c0ef !important;
+}
+.input-group-addon{
+    color:#9e9e9e;
+}
+.intl-tel-input.allow-dropdown{
+    display: block;
+}
+@media screen and (max-width: 370px){
+    .form_lay_select_padding{
+        padding: 0 1px;
+    }
+}
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    .two_column_signup_margintop{
+        margin-top: 12px;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .two_column_label_margintop{
+        margin-top: 17px !important;
+
+    }
+    .inline_section_align{
+        margin-top: 35px;
+    }
+}
+@media screen and (min-width: 1201px) {
+    .intl-tel-input .country-list{
+        width: 380px;
+    }
+}

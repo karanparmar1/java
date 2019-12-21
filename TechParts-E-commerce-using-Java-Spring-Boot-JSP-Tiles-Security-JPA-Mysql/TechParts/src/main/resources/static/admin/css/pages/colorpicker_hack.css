@@ -1,0 +1,121 @@
+/*!
+* Colorpicker for Bootstrap
+*
+* Copyright 2012 Stefan Petre
+* Licensed under the Apache License v2.0
+* http://www.apache.org/licenses/LICENSE-2.0
+*
+*/
+.colorpicker-saturation {
+	background-image: url(../../img/saturation.png) !important;
+}
+
+.colorpicker-hue {
+	background-image: url(../../img/hue.png) !important;
+}
+.colorpicker-alpha {
+	background-image: url(../../img/alpha.png) !important;
+}
+
+.colorpicker-color {
+	background-image: url(../../img/alpha.png) !important;
+}
+.display_none {display: none;}
+.dtpicker-buttonCont .dtpicker-button{
+	background-color: #0fb0c0;
+	color: #fff !important;
+}
+.messages .dropdown-menu{
+	width: 217px !important;
+}
+#dpMonths table{
+	display: none !important;
+}
+#top .btn-default,#top .btn-default:hover {
+	color: #333;
+	background-color: #4f4b4b !important;
+	border-color: #ccc;
+}
+.user-settings button,.user-settings button:hover {
+	color: #fff !important;
+}
+.time_picker_section .btn-primary:hover{
+	background-color: #00c0ef;
+	color: #fff;
+}
+.dtpicker-header .dtpicker-title{
+	font-size: 1.5em;
+	color: #00c0ef;
+}
+.dtpicker-header .dtpicker-value{
+	font-size: 1.1em;
+	color: #ff8080;
+}
+.dtpicker-components .dtpicker-comp > *,.dtpicker-components .dtpicker-comp > *:hover {
+	color: #00c0ef;
+}
+
+.form_elements_datepicker .input-append.date .add-on i{
+	margin-top: 0;
+}
+.range_inputs .btn-success:hover,.btn-warning.colorpicker-element:hover{
+	color: #fff;
+}
+#left .btn,#top .btn-group:nth-child(2) .btn{
+	border: none;
+}
+#top .btn-group:nth-child(2) .btn-default{
+	border-color: transparent;
+	padding-top: 5px;
+}
+.messages{
+	border: 1px solid #fff !important;
+}
+@media screen and (min-width: 1200px) {
+	.daterangepicker{
+		margin-right: 25px !important;
+	}
+}
+.datepicker table tr td.active, .datepicker table tr td.active:hover, .datepicker table tr td.active.disabled,
+.datepicker table tr td.active.disabled:hover,.datepicker table tr td.selected, .datepicker table tr td.selected:hover, .datepicker table tr td.selected.disabled, .datepicker table tr td.selected.disabled:hover
+{
+	background-image: linear-gradient(to bottom, #00c0ef, #00c0ef);
+}
+.datepicker table tr td.today, .datepicker table tr td.today:hover, .datepicker table tr td.today.disabled, .datepicker table tr td.today.disabled:hover{
+	background-image: linear-gradient(to bottom,#00c0ef, #00c0ef);
+	color: #fff !important;
+}
+.datepicker table tr td span.active, .datepicker table tr td span.active:hover, .datepicker table tr td span.active.disabled, .datepicker table tr td span.active.disabled:hover
+{
+	background-image: linear-gradient(to bottom, #00c0ef, #00c0ef);
+}
+.daterangepicker td.active, .daterangepicker td.active:hover,
+.daterangepicker .ranges li.active, .daterangepicker .ranges li:hover{
+	background-color: #00c0ef;
+	border-color: #00c0ef;
+}
+li.ui-timepicker-selected, .ui-timepicker-list li:hover, .ui-timepicker-list .ui-timepicker-selected:hover {
+	background: #00c0ef;
+}
+.month.focused,.year.focused{
+	background-color: #00c0ef !important;
+	color: #fff;
+}
+@media screen and (max-width: 389px) {
+	.daterangepicker{
+		right: 22px !important;
+		left: 22px !important;
+		padding-right: 10px;
+	}
+}
+@media screen and (min-width: 390px) and (max-width: 1200px){
+	.daterangepicker{
+		right: 22px !important;
+		padding:0 5px;
+	}
+}
+@media screen and (min-width: 910px) and (max-width: 1040px){
+	.daterangepicker{
+		left: 400px !important;
+	}
+}

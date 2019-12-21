@@ -1,0 +1,34 @@
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd" version="2.0">
+
+	<tlib-version>2.0</tlib-version>
+	<short-name>Category Tag Library</short-name>
+	<uri>http://techparts.com</uri>
+	<description>
+		Category Tag Library
+	</description>
+
+	<tag>
+		<name>categoriesAndSubcategoriesList</name>
+		<tag-class>com.kar.techparts.tags.CategoryListTag</tag-class>
+		<body-content>empty</body-content>
+		<attribute>
+			<name>fontAttributes</name>
+		</attribute>
+	</tag>
+	
+	<tag>
+		<name>parentCategoriesOnly</name>
+		<tag-class>com.kar.techparts.tags.OnlyParentCategoryList</tag-class>
+		<body-content>empty</body-content>
+		<attribute>
+			<name>fontAttributes</name>
+		</attribute>
+		<attribute>
+			<name>displayType</name>
+		</attribute>
+	</tag>
+	
+
+</taglib>
